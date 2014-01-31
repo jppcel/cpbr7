@@ -1,51 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Teste Telefonica</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Bootstrap -->
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">	
-	<style type="text/css">		
-		.container { 
-			text-align: center;
-			margin: 20px auto;
-		}
-		#mensagem {
-			font-weight: bold;
-			font-size: 1.2em;
-		}		
-		input[type=text] {
-			text-align: center;
-		}
-		div.span4:last-child {
-			margin: 20px auto;	
-		}
-	</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width, user-scalable=no" />
+  <title>KIT IoT</title>
+  <!-- Building blocks -->
+  <link rel="stylesheet" href="style/action_menu.css">
+  <link rel="stylesheet" href="style/buttons.css">
+  <link rel="stylesheet" href="style/confirm.css">
+  <link rel="stylesheet" href="style/edit_mode.css">
+  <link rel="stylesheet" href="style/headers.css">
+  <link rel="stylesheet" href="style/input_areas.css">
+  <link rel="stylesheet" href="style/status.css">
+  <link rel="stylesheet" href="style/switches.css">
+  <link rel="stylesheet" href="style_unstable/drawer.css">
+  <link rel="stylesheet" href="style_unstable/lists.css">
+  <link rel="stylesheet" href="style_unstable/progress_activity.css">
+  <link rel="stylesheet" href="style_unstable/seekbars.css">
+  <link rel="stylesheet" href="style_unstable/tabs.css">
+  <link rel="stylesheet" href="style_unstable/toolbars.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="icons/styles/action_icons.css">
+  <link rel="stylesheet" href="icons/styles/media_icons.css">
+  <link rel="stylesheet" href="icons/styles/comms_icons.css">
+  <link rel="stylesheet" href="icons/styles/settings_icons.css">
+
+  <!-- Transitions -->
+  <link rel="stylesheet" href="transitions.css">
+  
+  <!-- Util CSS: some extra tricks -->
+  <link rel="stylesheet" href="util.css">
+  <link rel="stylesheet" href="fonts.css">
+
+  <!-- Additional markup to make Building Blocks kind of cross browser -->
+  <link rel="stylesheet" href="cross_browser.css">
+
+  <link rel="apple-touch-icon" href="images/ico-ffOS-128x128.png"/>
+  <link rel="apple-touch-icon-precomposed" href="icon" />
+  
+  <link rel="stylesheet" href="style/dcamobile.css">
+  <style type="text/css">
+  p span.valor, p span.unidade-medida  {
+    height: 80px;
+    line-height: 80px;    
+    vertical-align: top;
+    font-size: 2.5em;
+    padding: 0;
+  }
+  p span.unidade-medida {
+    font-size: 1em;
+  }
+  </style>
 </head>
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="span4" id="mensagem">				
-			</div>
-			<div class="span4">
-				<label for="temperatura">Temperatura (kelvin): </label>
-				<input type="text" class="input-large" id="temperatura" />
-				<label for="ruido">Ruído (metros cúbicos): </label>
-				<input type="text" class="input-large" id="ruido" />
-				<label for="Luminosidade">Luminosidade (lumens): </label>
-				<input type="text" class="input-large" id="luminosidade" />
-				<label for="Humidade">Humidade (não sei o nome): </label>
-				<input type="text" class="input-large" id="humidade" />	
-			</div>
-			<div class="span4">
-				<button id="atualizar" class="btn btn-block btn-large btn-primary">Atualizar</button>
-			</div>
-		</div>
-	</div>
+  <section id="index" data-position="current">
+
+    <section id="drawer" role="region">
+      <header class="fixed">
+        <h1>CPBR7 <em>Como está o seu dia?</em></h1>
+      </header>
+      <article class="content scrollable header">
+
+        <header><h2>Temperatura</h2></header>
+        <p>
+          <img src="" width="75">&nbsp;
+          <span class="valor"></span>
+          <span class="unidade-medida"> ºC</span>
+        </p>
+
+        <header><h2>Ruido</h2></header>
+        <p>
+          <img src="" width="75">&nbsp;
+          <span class="valor"></span>
+          <span class="unidade-medida"> Db</span>
+        </p>
+
+        <header><h2>Umidade</h2></header>
+        <p>
+          <img src="" width="75">&nbsp;
+          <span class="valor"></span>
+          <span class="unidade-medida"> %UR</span>
+        </p>
+
+        <header><h2>Luminosidade</h2></header>
+        <p>
+          <img src="" width="75">&nbsp;
+          <span class="valor"></span>
+          <span class="unidade-medida"> cd</span>
+        </p>
+
+        <p>
+          <button id="btn-dca-dashboard" class="recommend">Atualizar</button>
+        </p>
+
+        <p id="telefonicalogo">
+          <img src="images/telefonica-vivo-logo.png" alt="Telefônica | VIVO" height="30"/>
+        </p>
+
+      </article>
+    </section> <!-- end drawer -->
+  </section> <!-- end index -->
+
+  <script type="text/javascript" defer src="js/status.js"></script>
+  <script type="text/javascript" defer src="js/seekbars.js"></script>
+  <script type="text/javascript" defer src="js/jquery.min.js"></script>
+  <script type="text/javascript" defer src="js/raphael-min.js"></script>
+  <script type="text/javascript" defer src="js/morris.min.js"></script>
+  <script type="text/javascript" defer src="js/lib/prettify.js"></script>
+  <script type="text/javascript" defer src="js/lib/example.js"></script>
+  <script type="text/javascript" defer src="js/script.js"></script>
+
 </body>
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="script.js"></script>
 </html>
+
