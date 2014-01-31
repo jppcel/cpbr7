@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste Telefonica</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">	
+	<style type="text/css">		
+		.container { 
+			text-align: center;
+			margin: 20px auto;
+		}
+		#mensagem {
+			font-weight: bold;
+			font-size: 1.2em;
+		}		
+		input[type=text] {
+			text-align: center;
+		}
+		div.span4:last-child {
+			margin: 20px auto;	
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="span4" id="mensagem">				
+			</div>
+			<div class="span4">
+				<label for="temperatura">Temperatura (kelvin): </label>
+				<input type="text" class="input-large" id="temperatura" />
+				<label for="ruido">Ruído (metros cúbicos): </label>
+				<input type="text" class="input-large" id="ruido" />
+				<label for="Luminosidade">Luminosidade (lumens): </label>
+				<input type="text" class="input-large" id="luminosidade" />
+				<label for="Humidade">Humidade (não sei o nome): </label>
+				<input type="text" class="input-large" id="humidade" />	
+			</div>
+			<div class="span4">
+				<button id="atualizar" class="btn btn-block btn-large btn-primary">Atualizar</button>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</html>
