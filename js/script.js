@@ -46,19 +46,19 @@ function atualizar () {
 			// configura a mensagem do ruído
 			if (ruido < 480) {
 				mensagem = "O que foi que você disse mesmo???";
-				imagem = "term-azcl.png";
+				imagem = "som-azcl.png";
 			} else if (ruido >= 480 && ruido < 600) {
 				mensagem = "Ôpa, parece que tá rolando uma festa!!!";
-				imagem = "term-azro.png";
+				imagem = "som-azro.png";
 			} else if (ruido >= 600 && ruido < 900) {
 				mensagem = "Ah, o adorável som do trânsito de São Paulo... Ou da CPBR, né??";
-				imagem = "term-verd.png";
+				imagem = "som-verd.png";
 			} else if (ruido >= 900 && ruido <= 1024) {
 				mensagem = "Tá quieto né? Acho que vou ligar um sonzinho...";
-				imagem = "term-lar.png";
+				imagem = "som-lar.png";
 			} else {
 				mensagem = "Nossa! Tá tão quieto que dá pra ouvir uma agulha caindo!!!";
-				imagem = "term-verm.png";
+				imagem = "som-verm.png";
 			}			
 
 			$('article header:eq(1) h2').text(mensagem);
@@ -69,19 +69,19 @@ function atualizar () {
 			// configura a mensagem da umidade
 			if (umidade < 12) {
 				mensagem = "Perigo! Perigo! Perigo!";
-				imagem = "term-azcl.png";
+				imagem = "umid-azcl.png";
 			} else if (umidade >= 12 && umidade < 20) {
 				mensagem = "Eita!!! Desse jeito o mar vira sertão!!!";
-				imagem = "term-azro.png";
+				imagem = "umid-azro.png";
 			} else if (umidade >= 20 && umidade < 50) {
 				mensagem = "Caramba, como está seco!!! Alguém me arruma um copo d'água???";
-				imagem = "term-verd.png";
+				imagem = "umid-verd.png";
 			} else if (umidade >= 50 && umidade <= 70) {
 				mensagem = "Olha! Núvens no céu!!! Aquela ali parece um cachorro... XD";
-				imagem = "term-lar.png";
+				imagem = "umid-lar.png";
 			} else {
 				mensagem = "É... acho que vai chover... Aquele barulho foi um trovão???";
-				imagem = "term-verm.png";
+				imagem = "umid-verm.png";
 			}			
 
 			$('article header:eq(2) h2').text(mensagem);
@@ -91,19 +91,19 @@ function atualizar () {
 			// configura a mensagem da luminosidade
 			if (luminosidade < 100) {
 				mensagem = "Quem apagou a luz??? Alguém trouxe uma vela???";
-				imagem = "term-azcl.png";
+				imagem = "luz-azcl.png";
 			} else if (luminosidade >= 100 && luminosidade < 300) {
 				mensagem = "Acho que está anoitecendo... Já tá na hora da janta???";
-				imagem = "term-azro.png";
+				imagem = "luz-azro.png";
 			} else if (luminosidade >= 300 && luminosidade < 500) {
 				mensagem = "É, até que tá bem clarinho, né???";
-				imagem = "term-verd.png";
+				imagem = "luz-verd.png";
 			} else if (luminosidade >= 500 && luminosidade <= 800) {
 				mensagem = "Ei, você aí!!! Desliga o farol alto, por favor!!!";
-				imagem = "term-lar.png";
+				imagem = "luz-lar.png";
 			} else { 
 				mensagem = "A luz!!! Não vá para a luz!!!";
-				imagem = "term-verm.png";
+				imagem = "luz-verm.png";
 			}			
 
 			$('article header:eq(3) h2').text(mensagem);
