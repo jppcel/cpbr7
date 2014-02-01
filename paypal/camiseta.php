@@ -58,45 +58,20 @@
 
     <section id="drawer" role="region">
       <header class="fixed">
-        <h1>CPBR7 <em>Como está o seu dia?</em></h1>
+        <a href="../index.html"><h1>CPBR7 <em>Como está o seu dia?</em></h1></a>
       </header>
 
       <article class="content scrollable header">
 
-        <header><h2>Temperatura</h2></header>
         <p>
-          <img src="" width="75">&nbsp;
-          <span class="valor"></span>
-          <span class="unidade-medida"> ºC</span>
-        </p>
-
-        <header><h2>Ruido</h2></header>
-        <p>
-          <img src="" width="75">&nbsp;
-          <span class="valor"></span>
-          <span class="unidade-medida"> Db</span>
-        </p>
-
-        <header><h2>Umidade</h2></header>
-        <p>
-          <img src="" width="75">&nbsp;
-          <span class="valor"></span>
-          <span class="unidade-medida"> %UR</span>
-        </p>
-
-        <header><h2>Luminosidade</h2></header>
-        <p>
-          <img src="" width="75">&nbsp;
-          <span class="valor"></span>
-          <span class="unidade-medida"> cd</span>
-        </p>
-
-        <p>
-          <button id="btn-dca-dashboard" class="recommend">Atualizar</button>
+          Deseja comprar a camiseta abaixo?
         </p>
         <p>
-          <a id="btn-dca-dashboard" href="paypal/camiseta.php" class="recommend">Compre a nossa camiseta</a>
-          <a id="btn-dca-dashboard" href="" class="recommend">Compre o sorteio de camisetas</a>
+          
+          <form id="checkout" action="checkout.php" method="post">
+            <span>Total</span><span>R$ 30.00</span><br />
+            <img id="ec-button" src="https://www.paypal.com/pt_BR/i/btn/btn_xpressCheckout.gif" onclick="checkout.submit();" />
+          </form>
         </p>
 
         <p id="telefonicalogo">
@@ -113,8 +88,8 @@
   <!-- <script type="text/javascript" defer src="js/raphael-min.js"></script>
   <script type="text/javascript" defer src="js/morris.min.js"></script>  -->
   <script type="text/javascript" defer src="js/lib/prettify.js"></script>
-  <!-- <script type="text/javascript" defer src="js/lib/example.js"></script>   -->
-  <script type="text/javascript" defer src="js/script.js"></script>
+  <!-- <script type="text/javascript" defer src="js/lib/example.js"></script>   
+  <script type="text/javascript" defer src="js/script.js"></script>-->
 
 </body>
 </html>
